@@ -1,0 +1,116 @@
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+    font-size: 2em;
+}
+
+.navbar-nav .nav-item a {
+    font-family: 'Righteous', cursive;
+}
+
+.navbar-nav .nav-item :hover {
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border-color: cornflowerblue;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.top-display {
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.topCard {
+    background-color: #343a40;
+}
+
+.topCard:hover {
+    transform: scale(1.1);
+    background-color: purple;
+    cursor: pointer;
+}
+
+.dressCard {
+    background-color: #343a40;
+}
+
+.dressCard:hover {
+    transform: scale(1.1);
+    background-color: pink;
+    cursor: pointer;
+}
+
+.jacketCard {
+    background-color: #343a40;
+}
+
+.jacketCard:hover {
+    transform: scale(1.1);
+    background-color: purple;
+    cursor: pointer;
+}
+
+.skirtCard {
+    background-color: #343a40;
+}
+
+.skirtCard:hover {
+    transform: scale(1.1);
+    background-color: pink;
+    cursor: pointer;
+}
+
+.container .fastDelivery {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.container .returnPolicy {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.container .customerServ {
+    width: 150px;
+    height: 150px;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+
+.container .card-header,
+.card-title {
+    font-family: 'Righteous', cursive;
+}
+
+.container .card-text {
+    font-family: 'Lobster', cursive;
+}
+
+main .container-fluid img {
+    width: 171px;
+    height: 185px;
+}
