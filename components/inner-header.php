@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg">
 
 <!--  Show this only on mobile to medium screens  -->
-<a class="navbar-brand d-lg-none" href="index.php">AnkSassy</a>
+<a class="navbar-brand d-lg-none" href="../index.php">AnkSassy</a>
 
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -14,14 +14,14 @@
     <ul class="navbar-nav">
 
         <li class="nav-item">
-            <a class="nav-link" href="shops/women.php">Women</a>
+            <a class="nav-link" href="../shops/women.php">Women</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="shops/children.php">Children</a>
+            <a class="nav-link" href="../shops/children.php">Children</a>
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" href="shops/store.php">Shop</a>
+            <a class="nav-link" href="../shops/store.php">Shop</a>
         </li>
 
         <li class="nav-item">
@@ -31,7 +31,7 @@
 
 
     <!--   Show this only lg screens and up   -->
-    <a class="navbar-brand d-none d-lg-block text-dark" href="index.php">AnkSassy <span style="font-size: 1em; color:pink">.</span></a>
+    <a class="navbar-brand d-none d-lg-block text-dark" href="../index.php">AnkSassy <span style="font-size: 1em; color:pink">.</span></a>
 
 
 

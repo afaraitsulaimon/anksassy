@@ -60,7 +60,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-sm-6  card border-primary text-primary dressCard">
+                <div class="col-lg-3 col-sm-6 card border-primary text-primary dressCard">
                     <div class="card-header border-primary">Dresses</div>
                     <div class="card-body">
                         <h5 class="card-image"><img src="https://img.icons8.com/emoji/64/000000/dress.png" /></h5>
@@ -103,7 +103,7 @@
                 </ul>
                 <hr>
 
-                <div class="col-lg-2 col-sm-12  col-md-2">
+                <div class="col-lg-2 col-sm-12 col-md-2">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="images/productImag2.png" alt="Card image cap">
                         <div class="card-body">
@@ -116,7 +116,7 @@
                 </div>
 
 
-                <div class="col-lg-2 col-sm-12  col-md-2">
+                <div class="col-lg-2 col-sm-12 col-md-2">
                     <div class="card" style="width: 18rem;">
                         <img class="card-img-top" src="images/productImag2.png" alt="Card image cap">
                         <div class="card-body">
