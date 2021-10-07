@@ -1,4 +1,4 @@
-<html lang="en">
+<!Doctype html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -36,7 +36,7 @@
                         your best Outfit from a great store like AnkSassy
                     </p>
 
-                    <button class="btn btn-primary mb-3"><a href="" class="text-light text-decoration-none" style="font-family: 'Fredoka One', cursive; ">Start Shopping</a></button>
+                    <button class="btn btn-primary mb-3"><a href="shops/store.php" class="text-light text-decoration-none" style="font-family: 'Fredoka One', cursive; ">Start Shopping</a></button>
                 </div>
 
                 <div class="col-6 d-none d-lg-block">
@@ -278,7 +278,7 @@
                     </div>
                 </div>
 
-                
+
 
                 <div class="row justify-content-around">
                     <ul class="nav">
@@ -301,47 +301,47 @@
                         </div>
                     </div>
 
-               
 
 
-                <div class="col-lg-2 col-sm-12 col-md-2">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/productImag4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h5 class="card-title">&#8358 2500</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
 
-
-                <div class="col-lg-2 col-sm-12 col-md-2">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/productImag4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h5 class="card-title">&#8358 10,300</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-sm-12 col-md-2">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/productImag4.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h5 class="card-title">&#8358 1500</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                    <div class="col-lg-2 col-sm-12 col-md-2">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/productImag4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">&#8358 2500</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
                         </div>
                     </div>
 
+
+                    <div class="col-lg-2 col-sm-12 col-md-2">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/productImag4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">&#8358 10,300</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-12 col-md-2">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="images/productImag4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h5 class="card-title">&#8358 1500</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
     </main>
 
 
@@ -380,16 +380,20 @@
         require_once("components/footer.php");
         ?>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 </body>
 
 </html>
 
 <script>
-    var words = ['Order Your Best Ankara Outfit Collections', 'Sell your Ankara Outfit Collections Here'],
+    var words = ['Order Your Best Ankara Outfit Collections', 'Sell your Ankara Outfit Collections Here', 'Easy Negotiation between Buyers and Seller'],
         part,
         i = 0,
         offset = 0,
