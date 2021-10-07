@@ -35,7 +35,7 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">About Us</a>
+            <a href="../pages/about-us.php">About Us</a>
           </li>
           <li>
             <a href="#!">Privacy Policy</a>
