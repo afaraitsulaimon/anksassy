@@ -1,3 +1,7 @@
+<?php
+    require_once("../authentications/register-auth.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +18,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/out-style.css">
-    <title>Document</title>
+    <title><?php $title = "Registration"; ?></title>
 </head>
 
 <body>
@@ -29,12 +33,23 @@
     <div class="container-fluid">
         <div class="row">
 
-
-
             <div class="col-6 register-form rounded" style="height:auto;">
+            <!-- displaying user error and successful registration here -->
+                <?php
+                    if (isset($_GET['regStatus']) && $_GET['regStatus'] === 'successfulReg') {
+                        
+                        echo "<div class='alert alert-success mt-3'>Successfully Registered. Check your mail to confirm registration</div>";
+
+                    }elseif (isset($theErrorsInRegistration)) {
+
+                       echo "<div class='alert alert-danger mt-3'>{$theErrorsInRegistration}</div>";
+                    }
+                ?>
+
+
                 <h1>Good To Have you Here!</h1>
                 <h3>Register</h3>
-                <form class="form" name="registrationForm">
+                <form class="form" name="registrationForm" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']) ?>">
                     <div class='form-group'>
                         <input type="text" name='userfirstname' placeholder="Firstname" class='form-control' id="firstName">
                         <div id="errorOnFirstName" class="text-danger text-center">
@@ -91,7 +106,13 @@
                     </div>
 
                     <div class='form-group'>
-                        <button class='form-control btn btn-light'>Register</button>
+                        <select name="userActivationStatus" class='form-control' id="usersType" hidden>
+                            <option value="inActive">In-Active</option>
+                        </select>
+                    </div>
+
+                    <div class='form-group'>
+                        <button type="submit" name="registerBtn" class='form-control btn btn-light'>Register</button>
                     </div>
 
 
