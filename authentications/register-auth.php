@@ -31,7 +31,12 @@ use PHPMailer\PHPMailer\SMTP;
         if ($_POST['usertype'] && $_POST['usertype'] === 'buyers') {
             
             $theTypeUserBelongTo = $_POST['usertype'];
+
+        }elseif ($_POST['usertype'] && $_POST['usertype'] === 'sellers') {
+            
+            $theTypeUserBelongTo = $_POST['usertype'];
         }
+        
         
 
         if ($_POST['userActivationStatus'] && $_POST['userActivationStatus'] === 'inActive') {

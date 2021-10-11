@@ -1,3 +1,8 @@
+
+<?php
+   
+    require_once("../authentications/login-auth.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,8 +50,15 @@
             </div>
             <div class="col-6 bg login-form border rounded">
                 <h1>Welcome Back!</h1><br />
+
+                <?php
+                    if (isset($theLoginErrorMessages)) {
+                        
+                        echo "<div class='alert alert-danger'>{$theLoginErrorMessages}</div>";
+                    }
+                ?>
                 <h3>Login</h3>
-                <form name="loginForm">
+                <form name="loginForm" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF']) ?>">
                     <div class='form-group'>
                         <input type="text" name='userLoginEmail' placeholder="Email Address" class='form-control'>
 
@@ -66,7 +78,7 @@
                     </div>
 
                     <div class='form-group'>
-                        <button class='form-control btn btn-primary'>Login</button>
+                        <button type='submit' name='userLoginButton' class='form-control btn btn-primary'>Login</button>
                     </div>
                     <span>Forgot Password? Click <a href="forget-password.php">Here</a></span>
 
