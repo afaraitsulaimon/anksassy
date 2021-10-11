@@ -1,0 +1,1 @@
+<h1>Welcome to buyers dashboard</h1>
