@@ -33,7 +33,7 @@
 
            
 
-            $verifyUserPass = password_verify($theUserLoginPassCode , $fetchTheParticularUser["passCodeOfUser"]); 
+            $verifyUserPass = password_verify($theUserLoginPassCode , $thePassHashed); 
           
             if (!$verifyUserPass) {
                 

@@ -1,6 +1,10 @@
 <?php
-    require_once("../authentications/forgot-pass-auth.php");
+    require_once("../authentications/retrieve-forgotpw-auth.php");
+    require_once("../authentications/get-forgotpw-token.php");
+    
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,45 +40,68 @@
         
 
     <div class="col-7 forgot-form rounded">
-            <h1>Hurray! <br> You can retrieve your password</h1>
-            <?php
-                if (isset($_GET['forgotpwStatus']) && $_GET['forgotpwStatus'] === 'successfulPassRequest') {
-                    
-                    echo "<div class='alert alert-success text-center'>A link to reset your password has being sent to your Email successfully </div>";
-                
-                }elseif (isset($theErrorsInForgetPass)) {
+                      <?php
 
-                    echo "<div class='alert alert-danger'>$theErrorsInForgetPass</div>";
-                }
-                
-            ?>
-                <h3>Forgot Password</h3>
-                <form name="forgotPassForm" method="POST" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>">
+                        if (isset($_GET['invalidToken']) && $_GET['invalidToken'] === 'failedToken') {
+                            
+                            echo "<div class='alert alert-danger mt-4'>Token is incorrect or invalid</div>";
+
+                        }elseif (isset($_GET['expiredToken']) && $_GET['expiredToken'] === 'failedToken') {
+                            
+                            echo "<div class='alert alert-danger mt-4'>Token has expired</div>";
+
+                        }elseif (isset($_GET['passResetStatus']) && $_GET['passResetStatus'] === 'successful') {
+                            
+                            echo "<div class='alert alert-success text-center mt-4'>Password Successfully created, Proceed to Login</div>";
+                       
+                        }elseif (isset($theErrMessageOnResetPassCode)) {
+                            
+                            echo "<div class='alert alert-danger mt-4'> $theErrMessageOnResetPassCode </div>";
+                        }
+
+                      ?>
+                <h3>Enter new Password</h3>
+                <form method="POST" name="retrieveForgotPassForm" action="<?php echo htmlentities($_SERVER['PHP_SELF'])?>">
                     <div class='form-group'>
-                        <input type="email" name='emailForForgotPw' placeholder="Enter your email" class='form-control'>
+                        <input type="password" name='newLoginPassword' placeholder="Enter new password" class='form-control'>
                     </div>
 
-                    <div id="errorOnEmailForgotPw" class='text-danger text-center'>
+                    <div id="errorOnNewLoginPassword" class='text-danger text-center'>
+                       
+                       </div>
+
+
+                    <div class='form-group'>
+                        <input type="password" name='confirmNewLoginPassword' placeholder="Confirm new password" class='form-control' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="Must contain at least 1 number and 1 uppercase and lowercase letter">
+                    </div>
+
+                    <div id="errorOnConfirmNewLoginPassword" class='text-danger text-center'>
                        
                     </div>
 
                     <div class='form-group'>
-                        <button type="submit" name="retrievePassButton" class='form-control btn btn-light'>Retrieve Password</button>
+                        <input type="hidden" name='toksForRetEntry' class='form-control' value='<?php if(isset($theTemporaryTokeForPassReset)){
+                                    echo $theTemporaryTokeForPassReset;
+                                }?>'>
                     </div>
 
-                   
+
+                    <div class='form-group'>
+                        <button type="submit" name="resetPasswordButton" class='form-control btn btn-light'>Reset Password</button>
+                    </div>
+
 
 
                 </form>
 
-                <p class="text-center ">Return to <a href="login.php" class="text-center">Login</a></p>
+                <p class="text-center">Return to <a href="login.php" class="text-center">Login</a></p>
             </div>
         </div>
     </div>
 
 
 
-    <script src="../script//forgot-pw-validation.js"></script>
+    <script src="../script//retrieve-forgotpw-validation.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
@@ -82,3 +109,4 @@
 </body>
 
 </html>
+
