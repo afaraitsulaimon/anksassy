@@ -1,5 +1,7 @@
 <?php
     session_start();
+  
+    
     require_once("../../database/db.php");
     require_once("handler/seller-log-verification.php");
     $loggedInSeller = sellerLoggedIn();
@@ -56,7 +58,7 @@
                     <li class="nav-item">
                         <div class="input-group">
 
-                            <button class="btn btn-danger">Logout</button>
+                            <a href="../../authentications/sellers/logout.php"><button class="btn btn-danger">Logout</button></a>
                         </div>
                     </li>
 

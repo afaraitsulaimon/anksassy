@@ -1,5 +1,4 @@
 
-
 <!Doctype html lang="en">
 
 <head>
@@ -22,6 +21,9 @@
 
     <?php
     require_once("components/seller-header.php");
+
+
+
     ?>
 
     <div class="container bg-primary rounded">
@@ -54,7 +56,7 @@
                                 Notifications <span class="badge badge-primary">4</span>
                         <div class="card-body">
        
-                            <h5 class="card-title text-primary">New Negotiation</h5>
+                            <h5 class="card-title text-primary">Orders</h5>
                             <p class="card-text">For all the new negotiations from customers that are willing to order goods from you.</p>
                         </div>
                         </button>
@@ -69,7 +71,7 @@
                         <div class="card-body">
                        
            
-                            <h5 class="card-title text-primary">Accepted Negotiation</h5>
+                            <h5 class="card-title text-primary">Transactions</h5>
                             <p class="card-text">This are the numbers of present accepted negotiations.</p>
                         </div>
                         </button>
@@ -79,42 +81,6 @@
                 </div>
 
 
-                <div class="card-group mt-4 mb-4">
-                    <div class="card">
-                    <button type="button" class="btn btn-light">
-                                Notifications <span class="badge badge-primary">4</span>
-                        <div class="card-body">
-                            
-                          
-                            <h5 class="card-title text-primary">Completed Transaction</h5>
-                            <p class="card-text">All your completed transactions, that has being shipped and delivered.</p>
-                        </div>
-                        </button>
-                    </div>
-
-
-                    <div class="card">
-                    <button type="button" class="btn btn-light">
-                                Notifications <span class="badge badge-primary">4</span>
-                        <div class="card-body">
-                        
-                            
-           
-                            <h5 class="card-title text-primary">Negotiations</h5>
-                            <p class="card-text">On going negotiations between seller and the buyer, which final price is yet to be accepted.</p>
-                        </div>
-                        </button>
-                    </div>
-
-                    <div class="card">
-                    <button type="button" class="btn btn-light">
-                                Notifications <span class="badge badge-primary">4</span>
-                        <div class="card-body">
-                            <h5 class="card-title text-primary">Transaction</h5>
-                            <p class="card-text">Transactions which buyers have paid for, update orders here (Processing, Shipped or Delivered).</p>
-                        </div>
-                        </button>
-                    </div>
 
 
                 </div>
