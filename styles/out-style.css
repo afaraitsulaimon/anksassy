@@ -306,3 +306,40 @@ main .container-fluid img {
     color: darkblue;
     font-weight: bolder;
 }
+
+.item-type h2 {
+    font-family: 'Righteous', cursive;
+}
+
+.item-type .navbar .item-type-cloth {
+    display: flex;
+    height: 20vh;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    background-color: white;
+}
+
+.item-type .navbar .item-type-cloth:hover {
+    background-color: orange;
+    color: white;
+    font-size: 2.5em;
+}
+
+.item-type .navbar .item-type-footwear {
+    display: flex;
+    height: 20vh;
+    width: 20vw;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    background-color: white;
+    color: black;
+}
+
+.item-type .navbar .item-type-footwear:hover {
+    background-color: green;
+    color: white;
+    font-size: 2.5em;
+}
